@@ -664,7 +664,7 @@ textarea {
     display: block;
 }
 
-.form-field {
+.modal-form form {
     margin-bottom: 8px;
 }
 .form-label {
@@ -701,9 +701,10 @@ textarea {
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
-    fill: #2E2F42;
+    fill: #2e2f42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .form-input:focus+.form-icon {
     stroke: #4D5AE5;
@@ -762,4 +763,48 @@ textarea {
 .form-btn:hover,
 .form-btn:focus {
    background-color: #404BBF; 
+}
+
+.modal-check-wrapper {
+    margin-bottom: 24px;
+}
+
+.check-input:checked+.modal-label-text .modal-check-box {
+    background-color: #404bbf;
+    border: none;
+    fill: #f4f4fd;
+}
+
+.modal-label-text {
+    color: #8E8F99;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+}
+
+.modal-check-box {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    flex-shrink: 0;
+    stroke-width: 1px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-link-text {
+    color: #4D5AE5;
+    text-decoration-line: underline;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-link-text:hover,
+.modal-link-text:focus {
+    color: #404BBF;
 }
