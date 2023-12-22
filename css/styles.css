@@ -767,6 +767,9 @@ textarea {
     fill: #4D5AE5; 
 }
 
+.modal-form-wrapper-text {
+    margin-bottom: 16px;
+}
 .form-textarea {
     color: rgba(46, 47, 66, 0.40);
         font-size: 12px;
